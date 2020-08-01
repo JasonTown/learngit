@@ -43,7 +43,7 @@ Git管理文件的三大部分：工作区，暂存区，仓库
 
 文件从暂存区>>>>工作区
 
-```shell
+```
 git checkout -- filename.txt
 ```
 
@@ -53,8 +53,3 @@ git checkout -- filename.txt
 
 文件从仓库>>>>暂存区
 
-
-
-
-
-Mychanged
