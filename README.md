@@ -35,13 +35,17 @@ Git管理文件的三大部分：工作区，暂存区，仓库
 
 - git commit
 
-文件从暂存区>>>>工作区
+文件从暂存区>>>>仓库
 
 
 
 - git checkout
 
 文件从暂存区>>>>工作区
+
+```
+git checkout -- filename.txt
+```
 
 
 
