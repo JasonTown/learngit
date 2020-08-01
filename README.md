@@ -9,11 +9,25 @@ Git管理文件的三大部分：工作区，暂存区，仓库
 
 
 
-- git add
+## 常用流程
 
-文件从工作区>>>>暂存区
+修改文件后，将修改记录保存在暂存区中，并提交至版本库
+
+- git add filename1
+
+文件1从工作区>>>>暂存区
 
 
+
+- git commit -m “修改记录”
+
+文件从暂存区>>>>仓库
+
+
+
+
+
+## 查看文件自上次add或commit之后修改的部分
 
 - git diff
 
@@ -33,19 +47,11 @@ Git管理文件的三大部分：工作区，暂存区，仓库
 
 
 
-- git commit
+## 回退文件
 
-文件从暂存区>>>>仓库
-
-
-
-- git checkout
+- git checkout -- filename.txt
 
 文件从暂存区>>>>工作区
-
-```
-git checkout -- filename.txt
-```
 
 
 
@@ -53,3 +59,8 @@ git checkout -- filename.txt
 
 文件从仓库>>>>暂存区
 
+
+
+- git restore –worktree filename.txt
+
+文件从工作区删除
